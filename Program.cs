@@ -22,21 +22,20 @@ namespace KoreanCare
         public Article SortArticles { get; set; }
 
         /// <summary>
-        /// Поск по названию статей
-        /// </summary>
-        public Article ArticleSearch { get; set; }
-
-        /// <summary>
-        /// Сохранение в закладки
+        /// Сохранение статей на диск
         /// </summary>
         public bool Save { get; set; }
 
         /// <summary>
+        /// Добавление статей
+        /// </summary>
+        public bool Add { get; set; }
+
+        /// <summary>
         /// Удаление статей
         /// </summary>
-        public void Removal()
-        {
-        }
+        public bool Removal { get; set; }
+        
     }
 
     /// <summary>
@@ -47,52 +46,32 @@ namespace KoreanCare
         /// <summary>
         /// Все статьи
         /// </summary>
-        public enum AllArticle
-        {
-            /// <summary>
-            /// Список ссылок на статьи
-            /// </summary>
-        }
+        public List<string> AllArticle {get; set;}
 
         /// <summary>
         /// Статьи для жирной кожи
         /// </summary>
-        public enum OilySkinArticle
-        {
-            /// <summary>
-            /// Список ссылок на статьи
-            /// </summary>
-        }
+        public List<string> OilySkinArticle {get; set;}
 
         /// <summary>
         /// Статьи для сухой кожи
         /// </summary>
-        public enum DrySkinArticle
-        {
-            /// <summary>
-            /// Список ссылок на статьи
-            /// </summary>
-        }
+        public List<string> DrySkinArticle {get; set;}
 
         /// <summary>
         /// Статьи для комбинированной кожи
         /// </summary>
-        public enum CombinationSkinArticle
-        {
-            /// <summary>
-            /// Список ссылок на статьи
-            /// </summary>
-        }
+        public List<string> CombinationSkinArticle { get; set; }
 
         /// <summary>
         /// Статьи для нормальной кожи
         /// </summary>
-        public enum NormalSkinArticle
-        {
-            /// <summary>
-            /// Список ссылок на статьи
-            /// </summary>
-        }
+        public List<string> NormalSkinArticle { get; set; }
+
+        /// <summary>
+        /// Дата публикации статьи
+        /// </summary>
+        public DateTime PublicationDate { get; set; }
     }
 
     /// <summary>
